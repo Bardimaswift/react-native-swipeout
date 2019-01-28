@@ -99,7 +99,7 @@ var SwipeoutBtn = (0, _createReactClass2.default)({
         onPress: this.props.onPress,
         underlayColor: this.props.underlayColor,
         disabled: this.props.disabled,
-        style: [_styles2.default.swipeoutBtnTouchable, styleSwipeoutBtn, this.props.buttonStyle],
+        style: [_styles2.default.swipeoutBtnTouchable, styleSwipeoutBtn, btn.buttonStyle],
         textStyle: styleSwipeoutBtnText },
       btn.component ? _react2.default.createElement(
         _reactNative.View,
