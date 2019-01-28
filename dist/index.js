@@ -482,7 +482,9 @@ var Swipeout = (0, _createReactClass2.default)({
       text: btn.text,
       type: btn.type,
       underlayColor: btn.underlayColor,
-      width: this.state.btnWidth
+      width: this.state.btnWidth,
+      containerStyle: btn.containerStyle,
+      buttonStyle: btn.buttonStyle
     });
   }
 });
