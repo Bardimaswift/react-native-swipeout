@@ -81,7 +81,7 @@ const SwipeoutBtn = createReactClass({
         onPress={this.props.onPress}
         underlayColor={this.props.underlayColor}
         disabled={this.props.disabled}
-        style={[styles.swipeoutBtnTouchable, styleSwipeoutBtn, this.props.buttonStyle]}
+        style={[styles.swipeoutBtnTouchable, styleSwipeoutBtn, btn.buttonStyle]}
         textStyle={styleSwipeoutBtnText}>
         {
           (btn.component ?
