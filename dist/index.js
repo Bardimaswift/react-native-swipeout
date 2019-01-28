@@ -46,7 +46,8 @@ var SwipeoutBtn = (0, _createReactClass2.default)({
     text: _propTypes2.default.node,
     type: _propTypes2.default.string,
     underlayColor: _propTypes2.default.string,
-    containerStyle: _propTypes2.default.object
+    containerStyle: _propTypes2.default.object,
+    buttonStyle: _propTypes2.default.object
   },
 
   getDefaultProps: function getDefaultProps() {
@@ -61,7 +62,8 @@ var SwipeoutBtn = (0, _createReactClass2.default)({
       text: 'Click me',
       type: '',
       width: 0,
-      containerStyle: null
+      containerStyle: null,
+      buttonStyle: null
     };
   },
 
@@ -97,7 +99,7 @@ var SwipeoutBtn = (0, _createReactClass2.default)({
         onPress: this.props.onPress,
         underlayColor: this.props.underlayColor,
         disabled: this.props.disabled,
-        style: [_styles2.default.swipeoutBtnTouchable, styleSwipeoutBtn],
+        style: [_styles2.default.swipeoutBtnTouchable, styleSwipeoutBtn, this.props.buttonStyle],
         textStyle: styleSwipeoutBtnText },
       btn.component ? _react2.default.createElement(
         _reactNative.View,
