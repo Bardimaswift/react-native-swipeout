@@ -27,6 +27,7 @@ const SwipeoutBtn = createReactClass({
     text: PropTypes.node,
     type: PropTypes.string,
     underlayColor: PropTypes.string,
+    containerStyle: PropTypes.object
   },
 
   getDefaultProps: function () {
@@ -41,6 +42,7 @@ const SwipeoutBtn = createReactClass({
       text: 'Click me',
       type: '',
       width: 0,
+      containerStyle: null
     };
   },
 
@@ -62,13 +64,10 @@ const SwipeoutBtn = createReactClass({
       width: btn.width,
     }]);
 
-    var styleSwipeoutBtnComponent = [];
-
-    //  set button dimensions
-    styleSwipeoutBtnComponent.push([{
+    var styleSwipeoutBtnComponent = [{
       height: btn.height,
       width: btn.width,
-    }]);
+    }, btn.containerStyle];
 
     var styleSwipeoutBtnText = [styles.swipeoutBtnText];
 
